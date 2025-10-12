@@ -8,6 +8,7 @@ if [ ! -d "$directory" ]; then
   exit 1
 fi
 
+echo "méthode avec find"
 # Compte le nombre d'occurrences du mot dans les fichiers du répertoire
 find "$directory" -type f -exec grep -o "$mot" {} \; | wc -l
 # find "$directory" -type f -> cherche tous les fichiers dans le répertoire
@@ -20,7 +21,7 @@ find "$directory" -type f -exec grep -o "$mot" {} \; | wc -l
 # numOcc variable pour stocker le nombre d'occurrences
 numOcc=0
 
-
+echo "méthode avec des boucles for"
 for subdir in "$directory"/*/; do #itérer sur chaque sous-répertoire
   for file in "$subdir"*; do #itérer sur chaque fichier
     if [ -f "$file" ]; then
