@@ -30,3 +30,8 @@ boucle while:
     - incrémente le compteur NOK de 1
 - fin de la boucle
 - affiche le nombre d'URL valides et non valides
+
+## miniprojet 27/10
+1. nous n'utilisons pas cat car l'on cherche à lire le fichier ligne par ligne
+
+2. et 2.1 voir miniprojet.sh 
