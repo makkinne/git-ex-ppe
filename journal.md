@@ -35,3 +35,6 @@ boucle while:
 1. nous n'utilisons pas cat car l'on cherche à lire le fichier ligne par ligne
 
 2. et 2.1 voir miniprojet.sh 
+
+curl -I -w "%{http_code}\n%{content_type}" https://fr.wikipedia.org
+cat tmp.txt | lynx -dump -stdin -nolist
