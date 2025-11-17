@@ -1,6 +1,6 @@
 # Journal de bord du projet encadré
 
-## exercice pour le 6/10d
+## exercice pour le 6/10
 
 ajout d'un fichier journal.md
 
@@ -38,3 +38,14 @@ boucle while:
 
 curl -I -w "%{http_code}\n%{content_type}" https://fr.wikipedia.org
 cat tmp.txt | lynx -dump -stdin -nolist
+
+## configuration git-along 12/11/25
+1. ajouter un fichier index.html à la racine du dépôt
+2. aller dans settings (sur github), se rendre dans l'onglet 'pages'
+3. dans la sous partie Branch remplacer "None" par "Main" -> Save
+4. c'est fini
+
+l'url de la page = https:// 'nom sur github' .github.io/ 'nom du repo'
+
+on va utiliser bulma pour le css
+

@@ -13,8 +13,22 @@ fi
 
 count_line=0
 n_mots=0
+echo "<html>
 
-echo "<table>"
+<head>
+  <meta charset=\"UTF-8\" />
+  <title>Programmation et Projet Encadré</title>
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css\">
+</head>
+
+<body>"
+
+echo "<div class=\"columns is-centered\">
+        <div class=\"column is-half\">
+          <div class=\"block\">
+            <h3 class=\"title is-3 has-background-info has-text-white\">Tableaux français :</h3>"
+echo "<table class=\" table is-bordered is-hoverable is-striped \">"
 echo "<tr><th>Numéro de ligne</th><th>URL</th><th>Code HTTP</th><th>Charset</th><th>Nombre de mots</th></tr>"
 while read -r line; 
 do
@@ -36,3 +50,5 @@ do
   echo "</tr>"
 done < "$file";
 echo "</table>"
+echo " </div> </div> </div>"
+echo "</body> </html>"
